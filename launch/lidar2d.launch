@@ -1,0 +1,12 @@
+<launch>
+    <group ns="lidar2d">
+
+        <node name="urg_node" pkg="urg_node" type="urg_node" />
+
+        <node name="static_transform_publisher" pkg="tf" type="static_transform_publisher"
+            args=" 0.0 0.0 0.0 0.0 0.0 0.0 map laser 100" />
+
+        <node name="detect" pkg="lidar2d" type="detect" />
+
+    </group>
+</launch>

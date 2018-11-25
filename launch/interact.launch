@@ -1,0 +1,9 @@
+<launch>
+    <group ns="lidar2d">
+
+        <node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" />
+
+        <node name="rviz" pkg="rviz" type="rviz" args="-d $(find lidar2d)/rviz/default.rviz" />
+
+    </group>
+</launch>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+  <name>lidar2d</name>
+  <version>0.0.0</version>
+  <description>The lidar2d package</description>
+
+  <maintainer email="npaul@ltu.edu">npaul</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  <run_depend>urg_c</run_depend> <!-- lidar -->
+  <run_depend>urg_node</run_depend> <!-- lidar -->
+
+  <export> </export>
+</package>
