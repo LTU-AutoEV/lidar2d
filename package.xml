@@ -19,6 +19,8 @@
   <run_depend>dynamic_reconfigure</run_depend>
   <run_depend>urg_c</run_depend> <!-- lidar -->
   <run_depend>urg_node</run_depend> <!-- lidar -->
+  <run_depend>costmap_2d</run_depend> <!-- map -->
+  <run_depend>map_server</run_depend> <!-- map -->
 
   <export> </export>
 </package>

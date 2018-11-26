@@ -1,0 +1,29 @@
+global_frame: /map
+robot_base_frame: base_link
+footprint: [
+    # tail
+    [-0.325, -0.20],
+    [-0.325, 0.2],
+    # nose
+    [0.325, 0.2],
+    [0.34, 0.0],
+    [0.325, -0.2]
+    ]
+
+plugins:
+    - {name: static_map,       type: "costmap_2d::StaticLayer"}
+    - {name: inflation,        type: "costmap_2d::InflationLayer"}
+    - {name: obstacles,       type: "costmap_2d::ObstacleLayer"}
+publish_frequency: 1.0
+update_frequency: 4.0
+obstacles:
+  track_unkown_space: true,
+  observation_sources: base_scan
+  base_scan: {
+    data_type: LaserScan,
+    sensor_frame: base_link,
+    clearing: true,
+    marking: true,
+    topic: /lidar2d/scan,
+    observation_persistance: 15.0
+  }
