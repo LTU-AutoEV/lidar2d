@@ -69,6 +69,12 @@ void Detect::scanCallback(const sensor_msgs::LaserScan& scan)
         {
             masked_scan.ranges[i] = INFINITY;
         }
+        else if (masked_scan.ranges[i] < config_.min_dist)
+        {
+            // Guarenteed to be less than range_min
+            masked_scan.ranges[i] = scan.range_min - 1.0;
+        }
+
     }
 
     scan_pub_.publish(masked_scan);
