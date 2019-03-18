@@ -1,9 +1,12 @@
 # lidar2d
 
-*Base configuration for installation and interaction with 2d HOKUYO URG lidar*
+*Base configuration for installation and interaction with either a 2d lidar*
 
+Currently Supported:
 
-**This package is currently WIP**
+  - [HLDS HLS-LFCD-LDS](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver)
+  - [Hokuyo URG](http://wiki.ros.org/urg_node)
+
 
 ## Install
 
@@ -13,6 +16,12 @@ Install deps:
 
 ```
 rosdep install --from-paths src --ignore-src -r -y
+```
+
+For HLDS HLS-LFCD-LDS, clone the driver into your catkin workspace `src` folder:
+
+```
+catkin_ws/src$ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 ```
 
 ## Running
