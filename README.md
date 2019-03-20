@@ -48,7 +48,7 @@ roslaunch lidar2d urg.launch
 To launch the interactive interface:
 
 ```
-roslaunch lidar2d interactive.rviz
+roslaunch lidar2d interact.launch
 ```
 
 ### Axes for HLDS Lidar
