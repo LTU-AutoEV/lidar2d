@@ -28,9 +28,22 @@ catkin_ws/src$ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 
 To launch the lidar and detect nodes:
 
+
+### HLDS
+
 ```
-roslaunch lidar2d lidar2d.launch
+roslaunch lidar2d hlds.launch
 ```
+
+### URG 
+
+```
+roslaunch lidar2d urg.launch
+```
+
+
+### Interactive Interface
+
 
 To launch the interactive interface:
 
