@@ -50,3 +50,7 @@ To launch the interactive interface:
 ```
 roslaunch lidar2d interactive.rviz
 ```
+
+### Axes for HLDS Lidar
+
+![](doc/axes.png)
