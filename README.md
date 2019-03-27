@@ -53,4 +53,4 @@ roslaunch lidar2d interact.launch
 
 ### Axes for HLDS Lidar
 
-![](doc/LidarGraph.png)
+![](doc/axes.png)
