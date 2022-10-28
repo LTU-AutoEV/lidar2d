@@ -12,7 +12,7 @@ Currently Supported:
 
 Clone this repository into your src folder
 
-Install deps:
+Install deps (at catkin workspace):
 
 ```
 rosdep install --from-paths src --ignore-src -r -y
@@ -45,7 +45,7 @@ roslaunch lidar2d urg.launch
 ### Interactive Interface
 
 
-To launch the interactive interface:
+To launch the interactive interface (rviz):
 
 ```
 roslaunch lidar2d interact.launch
